@@ -1,0 +1,62 @@
+@import url(../reset.css);
+@import url(../globalStyles.css);
+
+button {
+    background-color: var(--color-brand-1);
+    border: 0;
+    border-radius: .25rem;
+
+    padding: .5rem .8125rem;
+
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--color-grey-7);
+    
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover, button:active {
+    background-color: var(--color-brand-2);
+}
+
+.newSearch__button {
+    padding: 1.3125rem .8125rem;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.profile--button {
+    background-color: rgba(255, 255, 255, 0.080);
+
+    width: fit-content;
+    padding: 1.1875rem 1.5625rem;
+
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.repo--button {
+    width: fit-content;
+    padding: 5.5px 8px;
+
+    background-color: transparent;
+    border: 1px solid var(--color-grey-7);
+
+    transition: border 0.2s;
+}
+
+.repo--button:hover {
+    border: 1px solid var(--color-brand-2);
+}
+
+.repo--button a {
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--color-grey-7);
+
+    text-decoration: none;
+}

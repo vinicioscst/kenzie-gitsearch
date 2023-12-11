@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/pages/index.css" />
+
+    <!-- JS -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+
+    <title>Git Search</title>
+  </head>
+
+  <body>
+    <main id="app" class="flex__col">
+      <section class="app__container flex__col">
+        <div class="container flex__col">
+          <h1 class="app__title">Git Search</h1>
+          <p class="app__description">
+            Encontre e se conecte com profissionais de forma rápida e fácil
+          </p>
+        </div>
+      </section>
+
+      <section class="search__container flex__col">
+        <div class="container flex__col">
+          <h2 class="search__title">Procurar por um usuário</h2>
+          <form class="search__form flex__col">
+            <label for="username">Usuário github</label>
+            <input type="text" name="username" id="username" placeholder="Digite um usuário do github aqui..." required />
+            <button class="search__button" type="submit">Ver perfil do GitHub</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

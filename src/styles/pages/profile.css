@@ -1,0 +1,121 @@
+@import url(../reset.css);
+@import url(../globalStyles.css);
+@import url(../components/buttons.css);
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    
+    margin: 3.75rem auto;
+}
+
+.container {
+    margin: 0 1.875rem;
+}
+
+.profile__header {
+    display: flex;
+    justify-content: center;
+}
+
+.profile__header > .profile--header__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.profile__header > .profile--header__container > .profile--info__container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.profile__header > .profile--header__container > .profile--info__container img {
+    width: 5rem;
+
+    border: .125rem solid var(--color-brand-2);
+    border-radius: 50%;
+}
+
+.profile__header > .profile--header__container > .profile--info__container > .profile--name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 12.5rem;
+}
+
+.profile__repos > .repos__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.375rem;
+}
+
+.profile__repos > .repos__list > .repo--card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5625rem;
+
+    width: 100%;
+    min-height: 15.3125rem;
+
+    border: .125rem solid rgba(255, 255, 255, 0.100);
+    border-radius: .5rem;
+
+    padding: 2.5625rem 1.6875rem;
+
+    transition: background-color 0.2s;
+    transition: border 0.2s;
+}
+
+.profile__repos > .repos__list > .repo--card__container:hover {
+    background-color: var(--color-grey-1);
+    border: .125rem solid var(--color-grey-7);
+}
+
+.profile__repos > .repos__list > .repo--card__container > .repo--name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+}
+
+.profile__repos > .repos__list > .repo--card__container > .repo--description {
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-line-clamp: 3;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .profile__header {
+        width: 100%;
+    }
+
+    .profile__header > .profile--header__container {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        width: 100%;
+        margin: 0 1.875rem;
+    }
+
+    .profile__header > .profile--header__container > .profile--info__container > .profile--name {
+        max-width: 18rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #app {
+        max-width: 52.625rem;
+    }
+
+    .profile__repos > .repos__list > .repo--card__container {
+        max-width: 23.75rem;
+    }
+}

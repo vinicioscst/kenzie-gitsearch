@@ -1,0 +1,94 @@
+@import url(../reset.css);
+@import url(../globalStyles.css);
+@import url(../components/buttons.css);
+@import url(../components/inputs.css);
+
+
+.app__container {
+    justify-content: center;
+
+    background-color: var(--color-brand-1);
+    
+    width: 100%;
+    height: 50dvh;
+}
+
+.container {
+    margin: 0 1.875rem;
+    align-items: center;
+}
+
+.app__container > .container {
+    gap: 2.3125rem;
+    text-align: center;
+}
+
+.app__container > .container > .app__title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.app__container > .container > .app__description {
+    font-size: 1.25rem;
+}
+
+.search__container {
+    justify-content: center;
+
+    width: 100%;
+    height: 50dvh;
+}
+
+.search__container > .container {
+    gap: 2.8125rem;
+}
+
+.container > .search__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.container > .search__form {
+    gap: 1.25rem;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 3.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #app {
+        flex-direction: row;
+    }
+
+    .app__container, .search__container {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .container {
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    .app__container > .container {
+        width: 19.6875rem;
+        text-align: left;
+    }
+
+    .search__container > .container {
+        width: 19.6875rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .app__container > .container {
+        width: 27.1875rem;
+    }
+}

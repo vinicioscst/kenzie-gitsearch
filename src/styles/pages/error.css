@@ -1,0 +1,84 @@
+@import url(../reset.css);
+@import url(../globalStyles.css);
+@import url(../components/buttons.css);
+
+
+#app {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem;
+    margin: 0 1.875rem;
+
+    height: 100dvh;
+}
+
+.error__container {
+    gap: 1.875rem;
+}
+
+.error__container > .error__title {
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+.error__container > .error--info__container {
+    gap: .625rem;
+}
+
+.error__container > .error--info__container > .error__description {
+    font-size: 1rem;
+}
+
+.alert__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15.625rem;
+    height: 13.75rem;
+
+    border-radius: .3125rem;
+
+    background-color: var(--color-alert);
+
+
+    box-shadow: 1.3125rem 1.6875rem 0rem 0rem #520F84;
+}
+
+.alert__container img {
+    width: 5.625rem;
+    height: auto;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    #app {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .error__container {
+        width: 21.375rem;
+    }
+
+    .alert__container {
+        width: 25rem;
+        height: 21.875rem;
+    }
+    
+    .alert__container img {
+        width: 7.125rem;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    #app {
+        gap: 9.375rem;
+    }
+}

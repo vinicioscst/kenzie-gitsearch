@@ -1,0 +1,28 @@
+@import url(../reset.css);
+@import url(../globalStyles.css);
+
+
+label {
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--color-grey-7)
+}
+
+input {
+    background-color: var(--color-grey-1);
+    border: .0625rem solid rgba(255, 255, 255, 0.12);
+    border-radius: .25rem;
+    outline: 0;
+
+    padding: .5rem .8125rem;
+
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+input::placeholder {
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.50);
+}
